@@ -28,7 +28,7 @@ $("#submitBttn").on("click", function(e) {
 $("#buttonContainer").on("click", ".button", function(e) {
 	let topic = encodeURIComponent($(this).data("topic"));
 	var apiKey = "3Ys6MiHRcrJvO8SNPXB7vFYPvcoqYWQF"; 
-	var uriBase = "https://api.giphy.com/v1/gifs/search"
+	var uriBase = "https://api.giphy.com/v1/gifs/search";
 
 	$("#imageContainer").empty();
 
@@ -37,10 +37,10 @@ $("#buttonContainer").on("click", ".button", function(e) {
 	}).done(function(data) {
 		
 		for (var i = 0; i < data.data.length; i++) {
-			let img = data.data[i]
+			var img = data.data[i]
 			var animating = false;
 
-			let imgJQ = $("<img>").attr("src", img.images.original_still.url)
+			var imgJQ = $("<img>").attr("src", img.images.original_still.url)
 
 			$("<div>")
 				.addClass("gifDiv")
