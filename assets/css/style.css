@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+section {
+	float: left;
+	width: 80%;
+}
+
+form {
+	float: right;
+	width: 20%;
+}
+
+#inputTxt {
+	margin: 17px 0 0 15px;
+	width: 90%;
+}
+
+#submitBttn {
+	margin: 8px 0 15px 15px;
+	width: 90%;
+}
+
+header {
+	background-color: rgb(182, 27, 27);
+}
+
+main {
+	clear: both;
+}
+
+#gifPreloader {
+	display: none;
+}
+
+.gifDiv {
+	float: left;
+	margin: 15px;
+	padding: 5px;
+	font-weight: bold;
+	border: 5px dotted white;
+}
+
+.gifDiv:hover {
+	border: 5px dotted rgb(19, 122, 33)
+}
+
+.gifDiv span {
+	float: left;
+	margin-top: 7px;
+	clear:both;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.gifDiv img {
+	float: left;
+	clear: both;
+	height: 200px;
+}
+
+.clearfix::after {
+	display: block;
+	content: "";
+	clear: both;
+}
+
+.button {
+	color: #EEE;
+	font-size: 16px;
+	font-family: 'Quicksand', sans-serif;
+	background-color: rgb(19, 122, 33);
+	border-radius: 4px;
+	padding:7px;
+	border: 1.5px solid rgb(12, 73, 19);
+}
+
+#buttonContainer .button {
+	margin: 5px;
+}
