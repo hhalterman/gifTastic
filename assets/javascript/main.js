@@ -37,10 +37,10 @@ $("#buttonContainer").on("click", ".button", function(e) {
 	}).done(function(data) {
 		
 		for (var i = 0; i < data.data.length; i++) {
-			var img = data.data[i]
+			let img = data.data[i]
 			var animating = false;
 
-			var imgJQ = $("<img>").attr("src", img.images.original_still.url)
+			let imgJQ = $("<img>").attr("src", img.images.original_still.url)
 
 			$("<div>")
 				.addClass("gifDiv")
